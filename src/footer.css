@@ -1,0 +1,42 @@
+.footer {
+  display:flex;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  padding: 20px;
+  border-top: 1px solid rgba(0, 255, 255, 0.4);
+}
+
+.footer .site-name {
+  color: #00fff7;
+  text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7;
+}
+
+
+.social-icons a {
+  margin: 10px;
+}
+
+.social-icons {
+  padding-top: 10px;
+  padding-right: 20px;
+  position: absolute;
+  margin: auto;
+   right: 0;
+  gap: 20px;
+}
+
+
+.social-icons .icon.discord .icon.youtube {
+  max-width: 16px;
+}
+
+.social-icons img {
+  width: 38px;
+  height: 38px;
+  transition: 0.3s ease; /* лучше добавить здесь, чтобы плавность работала и при уходе курсора */
+}
+
+.social-icons img:hover {
+  filter: drop-shadow(0 0 5px currentColor) drop-shadow(0 0 15px currentColor);
+  transform: scale(1.05);
+}

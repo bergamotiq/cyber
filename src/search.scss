@@ -1,0 +1,68 @@
+$color: #0ff; // неоновый бирюзовый
+
+
+.search {
+  align-items: center;
+   display: table-row;
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 28px;
+    min-width: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    line-height: 16px;
+    margin: 5px 0;
+    font-size: 14px;
+    -webkit-appearance: none;
+    font-family: 'Mukta Malar', monospace;
+    transition: all .6s ease;
+    cursor: pointer;
+    color: $color;
+    text-shadow: 0 0 5px $color, 0 0 15px $color, 0 0 30px $color;
+
+    & + div {
+      position: relative;
+      height: 28px;
+      width: 100%;
+      margin: -28px 0 0 0;
+
+      svg {
+        display: block;
+        position: absolute;
+        height: 31px;
+        width: 160px;
+        right: 0;
+        top: 0;
+        fill: none;
+        stroke: $color;
+        stroke-width: 1.5px;
+        stroke-dashoffset: 271.908;
+        stroke-dasharray: 59 212.908;
+        transition: all .6s ease;
+        filter: drop-shadow(0 0 5px $color) drop-shadow(0 0 10px $color);
+      }
+    }
+
+    &:not(:placeholder-shown),
+    &:focus {
+      width: 160px;
+      padding: 0 4px;
+      cursor: text;
+
+      & + div svg {
+        stroke-dasharray: 150 212.908;
+        stroke-dashoffset: 300;
+      }
+    }
+  }
+}
+
+::selection {
+  background: rgba($color, .2);
+}
+::-moz-selection {
+  background: rgba($color, .2);
+}

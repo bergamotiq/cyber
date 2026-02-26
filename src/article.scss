@@ -1,0 +1,42 @@
+/* Подключаем шрифт Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+
+.article {
+   font-family: "Red Rose", serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+box-shadow: 0 0 3px #0c0c0c, 0 0 6px #000000; 
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+  backdrop-filter: blur(20px);
+  border: #00ffe7;
+}
+
+.article-title {
+  font-size: 2rem;
+  color: #00ffe7;
+  margin-bottom: 0.5rem;
+  text-shadow: -4px 5px 0px rgba(5, 5, 7, 1);
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.article-content p {
+  margin-bottom: 1rem;
+}
+
+
